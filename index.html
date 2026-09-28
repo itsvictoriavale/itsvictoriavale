@@ -1,10 +1,667 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Victoria Vale</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Victoria Vale – CEO | Vale Industrial Group</title>
+  <meta name="description" content="Victoria Vale is a fictional AI-generated character. CEO of Vale Industrial Group. Industrial operations, acquisitions and capital allocation.">
+  <link rel="icon" href="./images/vale-logo.png">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Victoria Vale</h1>
-    <p>CEO · Vale Industrial Group</p>
+
+<!-- ============ ICON SPRITE (generic, hand-drawn) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14c2.6 0 4.5 1.8 4.5 4.5"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 13h18"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M4 5h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H9l-5 4V6a1 1 0 0 1 1-1z"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16v-5a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 21h4"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-dots" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.6" style="fill:currentColor;stroke:none"/><circle cx="12" cy="12" r="1.6" style="fill:currentColor;stroke:none"/><circle cx="19" cy="12" r="1.6" style="fill:currentColor;stroke:none"/></symbol>
+    <symbol id="i-thumb" viewBox="0 0 24 24"><path d="M7 11v9H3v-9zM7 11l4-7a2 2 0 0 1 3 1.5V9h5.5a1.5 1.5 0 0 1 1.5 1.8l-1.5 8a1.5 1.5 0 0 1-1.5 1.2H7"/></symbol>
+    <symbol id="i-comment" viewBox="0 0 24 24"><path d="M4 5h16v11H10l-4 4v-4H4z"/></symbol>
+    <symbol id="i-repost" viewBox="0 0 24 24"><path d="M4 11V9a2 2 0 0 1 2-2h12l-3-3M20 13v2a2 2 0 0 1-2 2H6l3 3"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M21 3L3 10.5l7 3 3 7z"/><path d="M10 13.5L21 3"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ============ TOP NAVIGATION ============ -->
+<header class="topnav" id="topnav">
+  <div class="topnav__inner">
+    <div class="topnav__left">
+      <a class="brand" href="#top" aria-label="Victoria Vale – home">
+        <span class="brand__mark">VV</span>
+        <span class="brand__name">VICTORIA VALE</span>
+      </a>
+
+      <div class="search" id="search">
+        <button class="search__toggle icon-btn" id="searchToggle" type="button" aria-label="Open search">
+          <svg class="icon"><use href="#i-search"/></svg>
+        </button>
+        <div class="search__field">
+          <svg class="icon search__icon" aria-hidden="true"><use href="#i-search"/></svg>
+          <input id="searchInput" type="search" placeholder="Search" autocomplete="off" aria-label="Search">
+          <button class="search__close icon-btn" id="searchClose" type="button" aria-label="Close search">
+            <svg class="icon"><use href="#i-close"/></svg>
+          </button>
+        </div>
+        <ul class="search__results" id="searchResults" hidden></ul>
+      </div>
+    </div>
+
+    <nav class="topnav__links" aria-label="Primary">
+      <a class="navlink" href="#top" data-nav="home"><svg class="icon"><use href="#i-home"/></svg><span>Home</span></a>
+      <a class="navlink" href="#" data-nav="network"><svg class="icon"><use href="#i-users"/></svg><span>My Network</span></a>
+      <a class="navlink" href="#" data-nav="jobs"><svg class="icon"><use href="#i-briefcase"/></svg><span>Jobs</span></a>
+      <a class="navlink" href="#" data-nav="messaging"><svg class="icon"><use href="#i-message"/></svg><span>Messaging</span><b class="badge">3</b></a>
+      <a class="navlink" href="#" data-nav="notifications"><svg class="icon"><use href="#i-bell"/></svg><span>Notifications</span><b class="badge">7</b></a>
+      <div class="navlink navlink--me dropdown" id="meDropdown">
+        <button class="navlink__btn" type="button" aria-haspopup="true" aria-expanded="false" data-dropdown-toggle>
+          <img class="avatar avatar--nav" data-img="PROFILE_IMAGE" alt="">
+          <span>Me <svg class="icon icon--xs"><use href="#i-chevron"/></svg></span>
+        </button>
+        <div class="dropdown__menu dropdown__menu--nav" role="menu" hidden>
+          <div class="menu-profile">
+            <img class="avatar avatar--md" data-img="PROFILE_IMAGE" alt="">
+            <div>
+              <strong>Victoria Vale</strong>
+              <span>CEO | Vale Industrial Group</span>
+            </div>
+          </div>
+          <a class="btn btn--outline btn--sm btn--block" href="#top" role="menuitem">View profile</a>
+          <hr>
+          <button type="button" role="menuitem" data-action="about-project">About this project</button>
+          <button type="button" role="menuitem" data-action="toast" data-msg="Settings aren't part of this fictional profile.">Settings &amp; privacy</button>
+          <button type="button" role="menuitem" data-action="toast" data-msg="There's nothing to sign out of. This is a static page.">Sign out</button>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Mobile bottom tab bar -->
+<nav class="tabbar" aria-label="Primary mobile">
+  <a href="#top" data-nav="home"><svg class="icon"><use href="#i-home"/></svg><span>Home</span></a>
+  <a href="#" data-nav="network"><svg class="icon"><use href="#i-users"/></svg><span>Network</span></a>
+  <a href="#" data-nav="messaging"><svg class="icon"><use href="#i-message"/></svg><span>Messages</span><b class="badge">3</b></a>
+  <a href="#" data-nav="notifications"><svg class="icon"><use href="#i-bell"/></svg><span>Alerts</span><b class="badge">7</b></a>
+  <a href="#top" class="is-active" data-nav="profile"><img class="avatar avatar--tab" data-img="PROFILE_IMAGE" alt=""><span>Profile</span></a>
+</nav>
+
+<!-- ============ PAGE ============ -->
+<div class="page" id="top">
+  <div class="layout">
+
+    <!-- ========== MAIN COLUMN ========== -->
+    <main class="main" id="main">
+
+      <!-- PROFILE HEADER -->
+      <section class="card profile" aria-labelledby="profileName">
+        <div class="profile__cover">
+          <img data-img="COVER_IMAGE" alt="View over Manhattan from a high-floor executive office at dusk">
+        </div>
+
+        <div class="profile__body">
+          <div class="profile__avatar-row">
+            <img class="profile__avatar" data-img="PROFILE_IMAGE" alt="Victoria Vale, CEO of Vale Industrial Group">
+            <div class="profile__actions" id="profileActions">
+              <button class="btn btn--primary" id="connectBtn" type="button" aria-pressed="false">
+                <svg class="icon icon--sm"><use href="#i-plus"/></svg><span>Connect</span>
+              </button>
+              <button class="btn btn--outline" id="messageBtn" type="button">Message</button>
+              <div class="dropdown" id="moreDropdown">
+                <button class="btn btn--ghost" type="button" aria-haspopup="true" aria-expanded="false" data-dropdown-toggle>
+                  <span>More</span>
+                </button>
+                <div class="dropdown__menu dropdown__menu--more" role="menu" hidden>
+                  <button type="button" role="menuitem" data-action="message"><svg class="icon icon--sm"><use href="#i-send"/></svg>Send profile in a message</button>
+                  <button type="button" role="menuitem" data-action="copy-link"><svg class="icon icon--sm"><use href="#i-copy"/></svg>Copy link to profile</button>
+                  <button type="button" role="menuitem" data-action="toast" data-msg="PDF export isn't available on this static page."><svg class="icon icon--sm"><use href="#i-download"/></svg>Save to PDF</button>
+                  <button type="button" role="menuitem" data-action="about-project"><svg class="icon icon--sm"><use href="#i-info"/></svg>About this profile</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile__info">
+            <div class="profile__identity">
+              <h1 class="profile__name" id="profileName">Victoria Vale</h1>
+              <p class="profile__role">CEO | Vale Industrial Group</p>
+              <p class="profile__headline">CEO of Vale Industrial Group | Industrial Operations | Acquisitions | Capital Allocation</p>
+              <p class="meta profile__loc">
+                <span>New York, New York, United States</span>
+                <span class="dot" aria-hidden="true">&bull;</span>
+                <button class="link-btn" type="button" id="contactBtn">Contact info</button>
+              </p>
+              <p class="meta profile__conn">
+                <a class="link" href="#" data-action="toast" data-msg="Connections list is private on this profile.">500+ connections</a>
+                <span class="dot" aria-hidden="true">&bull;</span>
+                <span>12,000+ followers</span>
+              </p>
+              <p class="profile__company-link">
+                <a class="link" href="#experience">Vale Industrial Group</a>
+              </p>
+            </div>
+
+            <ul class="profile__orgs">
+              <li>
+                <img class="logo logo--sm" data-img="COMPANY_LOGO" alt="">
+                <div>
+                  <a href="#experience" class="org__name">Vale Industrial Group</a>
+                  <span class="org__sub">CEO &middot; 2024&ndash;Present</span>
+                </div>
+              </li>
+              <li>
+                <span class="logo logo--sm logo--school" aria-hidden="true">VS</span>
+                <div>
+                  <a href="#education" class="org__name">Vale School of Business</a>
+                  <span class="org__sub">Executive &amp; Family Enterprise Studies</span>
+                </div>
+              </li>
+              <li class="org__place">
+                <svg class="icon icon--sm"><use href="#i-pin"/></svg>
+                <span>New York, NY</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="card section" aria-labelledby="aboutH">
+        <h2 class="section__title" id="aboutH">About</h2>
+        <div class="clamp clamp--3" id="aboutText" data-clamp>
+          <p>CEO of Vale Industrial Group, a privately held industrial company focused on manufacturing, infrastructure, strategic investments, and long-term ownership.</p>
+          <p>I work at the intersection of operations, acquisitions, and capital allocation &mdash; with a preference for businesses that can be built to last.</p>
+          <p>I inherited the responsibility. The standards are mine.</p>
+        </div>
+        <button class="see-more" type="button" data-clamp-toggle="aboutText">&hellip;see more</button>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="card section" id="experience" aria-labelledby="expH">
+        <h2 class="section__title" id="expH">Experience</h2>
+
+        <div class="exp">
+          <img class="logo logo--md" data-img="COMPANY_LOGO" alt="Vale Industrial Group logo">
+          <div class="exp__body">
+            <h3 class="exp__company">Vale Industrial Group</h3>
+            <p class="exp__tenure">Full-time &middot; 5 yrs</p>
+            <p class="meta">New York, New York</p>
+
+            <ul class="roles">
+              <li class="role">
+                <span class="role__dot" aria-hidden="true"></span>
+                <h4 class="role__title">CEO</h4>
+                <p class="meta">2024 &ndash; Present &middot; 2 yrs</p>
+                <p class="meta">New York, New York</p>
+                <div class="clamp clamp--2 role__desc" id="role1" data-clamp>
+                  <p>Leading strategy, acquisitions, capital allocation, and operating businesses across the Vale Industrial Group portfolio.</p>
+                  <p>Focused on disciplined growth, operational performance, and long-term ownership.</p>
+                </div>
+                <button class="see-more" type="button" data-clamp-toggle="role1">&hellip;see more</button>
+                <p class="role__skills"><strong>Skills:</strong> Capital Allocation &middot; Mergers &amp; Acquisitions &middot; Operations</p>
+              </li>
+              <li class="role">
+                <span class="role__dot" aria-hidden="true"></span>
+                <h4 class="role__title">Director, Strategy &amp; Acquisitions</h4>
+                <p class="meta">2021 &ndash; 2024 &middot; 3 yrs</p>
+                <p class="meta">New York, New York</p>
+                <div class="clamp clamp--2 role__desc" id="role2" data-clamp>
+                  <p>Led acquisition analysis, strategic initiatives, market research, and operating reviews across the company's industrial portfolio.</p>
+                </div>
+                <button class="see-more" type="button" data-clamp-toggle="role2">&hellip;see more</button>
+                <p class="role__skills"><strong>Skills:</strong> Due Diligence &middot; Strategic Planning &middot; Market Research</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="card__footer-btn" type="button" id="expToggle" aria-expanded="false">Show role details</button>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="card section" id="education" aria-labelledby="eduH">
+        <h2 class="section__title" id="eduH">Education</h2>
+        <div class="exp">
+          <span class="logo logo--md logo--school" aria-hidden="true">VS</span>
+          <div class="exp__body">
+            <h3 class="exp__company">Vale School of Business</h3>
+            <p class="exp__tenure">Executive &amp; Family Enterprise Studies</p>
+            <p class="meta">2020 &ndash; 2024</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED -->
+      <section class="card section" aria-labelledby="featH">
+        <h2 class="section__title" id="featH">Featured</h2>
+        <div class="featured" id="featured">
+          <article class="feat" tabindex="0" role="button" data-feature="0" aria-label="Open The Vale Standard">
+            <div class="feat__img"><img data-img="FEATURED_IMAGE_1" alt="Industrial skyline at dusk"></div>
+            <div class="feat__text">
+              <span class="feat__type">Article</span>
+              <h3>The Vale Standard</h3>
+              <p>&ldquo;Operational discipline matters more than growth for growth's sake.&rdquo;</p>
+            </div>
+          </article>
+          <article class="feat" tabindex="0" role="button" data-feature="1" aria-label="Open Industrial Ownership">
+            <div class="feat__img"><img data-img="FEATURED_IMAGE_2" alt="Manufacturing plant at golden hour"></div>
+            <div class="feat__text">
+              <span class="feat__type">Post</span>
+              <h3>Industrial Ownership</h3>
+              <p>&ldquo;Long-term ownership changes the way you think about capital.&rdquo;</p>
+            </div>
+          </article>
+          <article class="feat" tabindex="0" role="button" data-feature="2" aria-label="Open The Acquisition Pipeline">
+            <div class="feat__img"><img data-img="FEATURED_IMAGE_3" alt="Boardroom table before a meeting"></div>
+            <div class="feat__text">
+              <span class="feat__type">Post</span>
+              <h3>The Acquisition Pipeline</h3>
+              <p>&ldquo;Three deals survived initial diligence. One didn't.&rdquo;</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ACTIVITY -->
+      <section class="card section section--activity" aria-labelledby="actH">
+        <div class="activity__head">
+          <div>
+            <h2 class="section__title" id="actH">Activity</h2>
+            <p class="followers">12,000+ followers</p>
+          </div>
+          <button class="btn btn--outline btn--sm" type="button" id="followBtn" aria-pressed="false">
+            <svg class="icon icon--xs"><use href="#i-plus"/></svg><span>Follow</span>
+          </button>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Activity">
+          <button class="tab is-active" role="tab" id="tab-posts" aria-selected="true" aria-controls="panel-posts" data-tab="posts">Posts</button>
+          <button class="tab" role="tab" id="tab-comments" aria-selected="false" aria-controls="panel-comments" data-tab="comments" tabindex="-1">Comments</button>
+          <button class="tab" role="tab" id="tab-media" aria-selected="false" aria-controls="panel-media" data-tab="media" tabindex="-1">Media</button>
+        </div>
+
+        <!-- POSTS -->
+        <div class="tabpanel" id="panel-posts" role="tabpanel" aria-labelledby="tab-posts">
+
+          <article class="post" data-likes="1284" data-comments="113" data-reposts="27">
+            <header class="post__head">
+              <img class="avatar avatar--post" data-img="PROFILE_IMAGE" alt="">
+              <div class="post__who">
+                <strong>Victoria Vale</strong>
+                <span>CEO | Vale Industrial Group</span>
+                <span class="post__time">2h <svg class="icon icon--xs"><use href="#i-globe"/></svg></span>
+              </div>
+              <button class="icon-btn post__menu" type="button" aria-label="Post options"><svg class="icon"><use href="#i-dots"/></svg></button>
+            </header>
+            <div class="post__body">
+              <p>Spent the morning reviewing the acquisition pipeline.</p>
+              <p>Three opportunities survived initial diligence.</p>
+              <p>One didn't.</p>
+              <p>That's the point of diligence.</p>
+            </div>
+            <img class="post__img" data-img="POST_IMAGE_1" alt="Manhattan skyline from the office window at dusk">
+            <div class="post__stats">
+              <span class="reactions"><span class="react react--a"></span><span class="react react--b"></span><span class="react react--c"></span><span class="count-likes">1,284</span></span>
+              <span class="post__counts"><button class="link-btn link-btn--muted" type="button" data-action="toggle-comments"><span class="count-comments">113</span> comments</button> &bull; <span class="count-reposts">27</span> reposts</span>
+            </div>
+            <div class="post__actions">
+              <button type="button" data-action="like" aria-pressed="false"><svg class="icon"><use href="#i-thumb"/></svg><span>Like</span></button>
+              <button type="button" data-action="toggle-comments"><svg class="icon"><use href="#i-comment"/></svg><span>Comment</span></button>
+              <button type="button" data-action="repost"><svg class="icon"><use href="#i-repost"/></svg><span>Repost</span></button>
+              <button type="button" data-action="send"><svg class="icon"><use href="#i-send"/></svg><span>Send</span></button>
+            </div>
+            <div class="comments" hidden>
+              <div class="comment-form">
+                <span class="avi avi--c5 avi--you" aria-hidden="true">You</span>
+                <input type="text" placeholder="Add a comment&hellip;" aria-label="Add a comment">
+                <button class="btn btn--primary btn--sm" type="button" data-action="post-comment" disabled>Post</button>
+              </div>
+              <ul class="comment-list">
+                <li class="comment"><span class="avi avi--c1">JM</span><div class="comment__bubble"><strong>James Mercer</strong><span>Managing Director | Industrial Investments</span><p>The one that didn't survive is usually the most instructive.</p></div></li>
+                <li class="comment"><span class="avi avi--c2">SC</span><div class="comment__bubble"><strong>Sarah Chen</strong><span>Principal | Private Capital</span><p>Diligence is a filter, not a formality. Well put.</p></div></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="post" data-likes="768" data-comments="61" data-reposts="14">
+            <header class="post__head">
+              <img class="avatar avatar--post" data-img="PROFILE_IMAGE" alt="">
+              <div class="post__who">
+                <strong>Victoria Vale</strong>
+                <span>CEO | Vale Industrial Group</span>
+                <span class="post__time">1d <svg class="icon icon--xs"><use href="#i-globe"/></svg></span>
+              </div>
+              <button class="icon-btn post__menu" type="button" aria-label="Post options"><svg class="icon"><use href="#i-dots"/></svg></button>
+            </header>
+            <div class="post__body">
+              <p>People tend to think acquisitions are about finding something cheap.</p>
+              <p>They're usually about finding something you understand better than the market does.</p>
+            </div>
+            <img class="post__img" data-img="POST_IMAGE_2" alt="A desk with a single document and a gold pen">
+            <div class="post__stats">
+              <span class="reactions"><span class="react react--a"></span><span class="react react--c"></span><span class="count-likes">768</span></span>
+              <span class="post__counts"><button class="link-btn link-btn--muted" type="button" data-action="toggle-comments"><span class="count-comments">61</span> comments</button> &bull; <span class="count-reposts">14</span> reposts</span>
+            </div>
+            <div class="post__actions">
+              <button type="button" data-action="like" aria-pressed="false"><svg class="icon"><use href="#i-thumb"/></svg><span>Like</span></button>
+              <button type="button" data-action="toggle-comments"><svg class="icon"><use href="#i-comment"/></svg><span>Comment</span></button>
+              <button type="button" data-action="repost"><svg class="icon"><use href="#i-repost"/></svg><span>Repost</span></button>
+              <button type="button" data-action="send"><svg class="icon"><use href="#i-send"/></svg><span>Send</span></button>
+            </div>
+            <div class="comments" hidden>
+              <div class="comment-form">
+                <span class="avi avi--c5 avi--you" aria-hidden="true">You</span>
+                <input type="text" placeholder="Add a comment&hellip;" aria-label="Add a comment">
+                <button class="btn btn--primary btn--sm" type="button" data-action="post-comment" disabled>Post</button>
+              </div>
+              <ul class="comment-list">
+                <li class="comment"><span class="avi avi--c3">MR</span><div class="comment__bubble"><strong>Michael Rowan</strong><span>COO | Manufacturing</span><p>Understanding the operations is the edge most buyers skip.</p></div></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="post" data-likes="342" data-comments="47" data-reposts="6">
+            <header class="post__head">
+              <img class="avatar avatar--post" data-img="PROFILE_IMAGE" alt="">
+              <div class="post__who">
+                <strong>Victoria Vale</strong>
+                <span>CEO | Vale Industrial Group</span>
+                <span class="post__time">3d <svg class="icon icon--xs"><use href="#i-globe"/></svg></span>
+              </div>
+              <button class="icon-btn post__menu" type="button" aria-label="Post options"><svg class="icon"><use href="#i-dots"/></svg></button>
+            </header>
+            <div class="post__body">
+              <p>A larger company isn't automatically a better company.</p>
+              <p>I'd rather own a business with excellent cash generation and mediocre headlines than the reverse.</p>
+            </div>
+            <img class="post__img" data-img="POST_IMAGE_3" alt="Bar chart of steadily rising cash flow, gold bars highlighted">
+            <div class="post__stats">
+              <span class="reactions"><span class="react react--a"></span><span class="react react--b"></span><span class="count-likes">342</span></span>
+              <span class="post__counts"><button class="link-btn link-btn--muted" type="button" data-action="toggle-comments"><span class="count-comments">47</span> comments</button> &bull; <span class="count-reposts">6</span> reposts</span>
+            </div>
+            <div class="post__actions">
+              <button type="button" data-action="like" aria-pressed="false"><svg class="icon"><use href="#i-thumb"/></svg><span>Like</span></button>
+              <button type="button" data-action="toggle-comments"><svg class="icon"><use href="#i-comment"/></svg><span>Comment</span></button>
+              <button type="button" data-action="repost"><svg class="icon"><use href="#i-repost"/></svg><span>Repost</span></button>
+              <button type="button" data-action="send"><svg class="icon"><use href="#i-send"/></svg><span>Send</span></button>
+            </div>
+            <div class="comments" hidden>
+              <div class="comment-form">
+                <span class="avi avi--c5 avi--you" aria-hidden="true">You</span>
+                <input type="text" placeholder="Add a comment&hellip;" aria-label="Add a comment">
+                <button class="btn btn--primary btn--sm" type="button" data-action="post-comment" disabled>Post</button>
+              </div>
+              <ul class="comment-list">
+                <li class="comment"><span class="avi avi--c4">DK</span><div class="comment__bubble"><strong>Daniel Kessler</strong><span>CFO | Precision Components</span><p>Headlines don't service debt. Cash does.</p></div></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="post" data-likes="519" data-comments="38" data-reposts="9">
+            <header class="post__head">
+              <img class="avatar avatar--post" data-img="PROFILE_IMAGE" alt="">
+              <div class="post__who">
+                <strong>Victoria Vale</strong>
+                <span>CEO | Vale Industrial Group</span>
+                <span class="post__time">5d <svg class="icon icon--xs"><use href="#i-globe"/></svg></span>
+              </div>
+              <button class="icon-btn post__menu" type="button" aria-label="Post options"><svg class="icon"><use href="#i-dots"/></svg></button>
+            </header>
+            <div class="post__body">
+              <p>Growth is useful.</p>
+              <p>Profitable, repeatable growth is better.</p>
+            </div>
+            <div class="post__stats">
+              <span class="reactions"><span class="react react--a"></span><span class="react react--c"></span><span class="count-likes">519</span></span>
+              <span class="post__counts"><button class="link-btn link-btn--muted" type="button" data-action="toggle-comments"><span class="count-comments">38</span> comments</button> &bull; <span class="count-reposts">9</span> reposts</span>
+            </div>
+            <div class="post__actions">
+              <button type="button" data-action="like" aria-pressed="false"><svg class="icon"><use href="#i-thumb"/></svg><span>Like</span></button>
+              <button type="button" data-action="toggle-comments"><svg class="icon"><use href="#i-comment"/></svg><span>Comment</span></button>
+              <button type="button" data-action="repost"><svg class="icon"><use href="#i-repost"/></svg><span>Repost</span></button>
+              <button type="button" data-action="send"><svg class="icon"><use href="#i-send"/></svg><span>Send</span></button>
+            </div>
+            <div class="comments" hidden>
+              <div class="comment-form">
+                <span class="avi avi--c5 avi--you" aria-hidden="true">You</span>
+                <input type="text" placeholder="Add a comment&hellip;" aria-label="Add a comment">
+                <button class="btn btn--primary btn--sm" type="button" data-action="post-comment" disabled>Post</button>
+              </div>
+              <ul class="comment-list"></ul>
+            </div>
+          </article>
+
+          <article class="post" data-likes="226" data-comments="19" data-reposts="4">
+            <header class="post__head">
+              <img class="avatar avatar--post" data-img="PROFILE_IMAGE" alt="">
+              <div class="post__who">
+                <strong>Victoria Vale</strong>
+                <span>CEO | Vale Industrial Group</span>
+                <span class="post__time">1w <svg class="icon icon--xs"><use href="#i-globe"/></svg></span>
+              </div>
+              <button class="icon-btn post__menu" type="button" aria-label="Post options"><svg class="icon"><use href="#i-dots"/></svg></button>
+            </header>
+            <div class="post__body">
+              <div class="clamp clamp--2" id="post5" data-clamp>
+                <p>One of the easiest ways to destroy an operating business is to optimize everything except the customer experience.</p>
+                <p>Cost discipline matters. So does the phone call from a customer that doesn't get returned.</p>
+                <p>Only one of those shows up in the quarterly numbers. Eventually, both do.</p>
+              </div>
+              <button class="see-more" type="button" data-clamp-toggle="post5">&hellip;see more</button>
+            </div>
+            <div class="post__stats">
+              <span class="reactions"><span class="react react--a"></span><span class="react react--c"></span><span class="count-likes">226</span></span>
+              <span class="post__counts"><button class="link-btn link-btn--muted" type="button" data-action="toggle-comments"><span class="count-comments">19</span> comments</button> &bull; <span class="count-reposts">4</span> reposts</span>
+            </div>
+            <div class="post__actions">
+              <button type="button" data-action="like" aria-pressed="false"><svg class="icon"><use href="#i-thumb"/></svg><span>Like</span></button>
+              <button type="button" data-action="toggle-comments"><svg class="icon"><use href="#i-comment"/></svg><span>Comment</span></button>
+              <button type="button" data-action="repost"><svg class="icon"><use href="#i-repost"/></svg><span>Repost</span></button>
+              <button type="button" data-action="send"><svg class="icon"><use href="#i-send"/></svg><span>Send</span></button>
+            </div>
+            <div class="comments" hidden>
+              <div class="comment-form">
+                <span class="avi avi--c5 avi--you" aria-hidden="true">You</span>
+                <input type="text" placeholder="Add a comment&hellip;" aria-label="Add a comment">
+                <button class="btn btn--primary btn--sm" type="button" data-action="post-comment" disabled>Post</button>
+              </div>
+              <ul class="comment-list">
+                <li class="comment"><span class="avi avi--c2">SC</span><div class="comment__bubble"><strong>Sarah Chen</strong><span>Principal | Private Capital</span><p>We see this in diligence constantly. The churn shows up before the P&amp;L admits it.</p></div></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <!-- COMMENTS -->
+        <div class="tabpanel" id="panel-comments" role="tabpanel" aria-labelledby="tab-comments" hidden>
+          <article class="post post--comment">
+            <p class="post__ctx"><strong>Victoria Vale</strong> commented on <a class="link" href="#" data-action="toast" data-msg="This is a fictional post.">James Mercer's post</a> &middot; 2d</p>
+            <blockquote>The multiple is the least interesting part of the model. Ask what has to be true for the cash flow to hold.</blockquote>
+            <p class="meta">86 reactions &middot; 9 replies</p>
+          </article>
+          <article class="post post--comment">
+            <p class="post__ctx"><strong>Victoria Vale</strong> commented on <a class="link" href="#" data-action="toast" data-msg="This is a fictional post.">Michael Rowan's post</a> &middot; 6d</p>
+            <blockquote>Board meeting ran long. The agenda wasn't the problem.</blockquote>
+            <p class="meta">203 reactions &middot; 17 replies</p>
+          </article>
+          <article class="post post--comment">
+            <p class="post__ctx"><strong>Victoria Vale</strong> commented on <a class="link" href="#" data-action="toast" data-msg="This is a fictional post.">Sarah Chen's post</a> &middot; 2w</p>
+            <blockquote>The best acquisition is rarely the most exciting one.</blockquote>
+            <p class="meta">312 reactions &middot; 22 replies</p>
+          </article>
+        </div>
+
+        <!-- MEDIA -->
+        <div class="tabpanel" id="panel-media" role="tabpanel" aria-labelledby="tab-media" hidden>
+          <div class="media-grid">
+            <button type="button" class="media-item" data-lightbox="POST_IMAGE_1" aria-label="Open image: Manhattan skyline"><img data-img="POST_IMAGE_1" alt="Manhattan skyline from the office window at dusk"></button>
+            <button type="button" class="media-item" data-lightbox="POST_IMAGE_2" aria-label="Open image: desk with document"><img data-img="POST_IMAGE_2" alt="A desk with a single document and a gold pen"></button>
+            <button type="button" class="media-item" data-lightbox="POST_IMAGE_3" aria-label="Open image: cash flow chart"><img data-img="POST_IMAGE_3" alt="Bar chart of steadily rising cash flow"></button>
+          </div>
+        </div>
+
+        <button class="card__footer-btn" type="button" data-action="toast" data-msg="That's all the activity on this fictional profile.">Show all activity</button>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="card section" aria-labelledby="skH">
+        <h2 class="section__title" id="skH">Skills</h2>
+        <ul class="skills" id="skillsList">
+          <li class="skill">
+            <h3>Capital Allocation</h3>
+            <p class="endorse"><span class="endorse__avis"><i class="avi avi--c1 avi--xs">JM</i><i class="avi avi--c2 avi--xs">SC</i></span> 48 endorsements</p>
+          </li>
+          <li class="skill">
+            <h3>Mergers &amp; Acquisitions</h3>
+            <p class="endorse"><span class="endorse__avis"><i class="avi avi--c2 avi--xs">SC</i><i class="avi avi--c3 avi--xs">MR</i></span> 41 endorsements</p>
+          </li>
+          <li class="skill">
+            <h3>Industrial Operations</h3>
+            <p class="endorse"><span class="endorse__avis"><i class="avi avi--c3 avi--xs">MR</i><i class="avi avi--c4 avi--xs">DK</i></span> 33 endorsements</p>
+          </li>
+          <li class="skill skill--extra" hidden>
+            <h3>Strategic Planning</h3>
+            <p class="endorse">27 endorsements</p>
+          </li>
+          <li class="skill skill--extra" hidden>
+            <h3>Due Diligence</h3>
+            <p class="endorse">24 endorsements</p>
+          </li>
+          <li class="skill skill--extra" hidden>
+            <h3>Manufacturing Strategy</h3>
+            <p class="endorse">19 endorsements</p>
+          </li>
+        </ul>
+        <button class="card__footer-btn" type="button" id="skillsToggle" aria-expanded="false">Show all 6 skills</button>
+      </section>
+
+    </main>
+
+    <!-- ========== RIGHT SIDEBAR ========== -->
+    <aside class="sidebar" aria-label="Additional profile information">
+
+      <section class="card side">
+        <h2 class="side__title">Victoria Vale</h2>
+        <p class="side__sub">Profile analytics &middot; Private to you</p>
+        <ul class="stats">
+          <li><strong>847</strong><span>Profile views</span></li>
+          <li><strong>18,421</strong><span>Post impressions</span></li>
+          <li><strong>126</strong><span>Search appearances</span></li>
+        </ul>
+      </section>
+
+      <section class="card side">
+        <h2 class="side__title">People you may know</h2>
+        <ul class="people">
+          <li>
+            <span class="avi avi--c1">JM</span>
+            <div><strong>James Mercer</strong><span>Managing Director | Industrial Investments</span>
+              <button class="btn btn--outline btn--sm btn--pill" type="button" data-connect>Connect</button></div>
+          </li>
+          <li>
+            <span class="avi avi--c2">SC</span>
+            <div><strong>Sarah Chen</strong><span>Principal | Private Capital</span>
+              <button class="btn btn--outline btn--sm btn--pill" type="button" data-connect>Connect</button></div>
+          </li>
+          <li>
+            <span class="avi avi--c3">MR</span>
+            <div><strong>Michael Rowan</strong><span>COO | Manufacturing</span>
+              <button class="btn btn--outline btn--sm btn--pill" type="button" data-connect>Connect</button></div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="card side">
+        <h2 class="side__title">People also viewed</h2>
+        <ul class="people">
+          <li>
+            <span class="avi avi--c4">DK</span>
+            <div><strong>Daniel Kessler</strong><span>CFO | Precision Components</span>
+              <button class="btn btn--outline btn--sm btn--pill" type="button" data-connect>Connect</button></div>
+          </li>
+          <li>
+            <span class="avi avi--c5">EH</span>
+            <div><strong>Eleanor Hartwell</strong><span>Chair | Hartwell Infrastructure Partners</span>
+              <button class="btn btn--outline btn--sm btn--pill" type="button" data-connect>Connect</button></div>
+          </li>
+          <li>
+            <span class="avi avi--c6">RO</span>
+            <div><strong>Raymond Okafor</strong><span>CEO | Northline Fabrication</span>
+              <button class="btn btn--outline btn--sm btn--pill" type="button" data-connect>Connect</button></div>
+          </li>
+          <li>
+            <span class="avi avi--c7">AL</span>
+            <div><strong>Anna Lindqvist</strong><span>Partner | Long-Horizon Capital</span>
+              <button class="btn btn--outline btn--sm btn--pill" type="button" data-connect>Connect</button></div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="card side">
+        <h2 class="side__title">Victoria's interests</h2>
+        <ul class="interests">
+          <li>Industrial manufacturing</li>
+          <li>Infrastructure</li>
+          <li>Mergers &amp; acquisitions</li>
+          <li>Private markets</li>
+          <li>Operations</li>
+          <li>Capital allocation</li>
+        </ul>
+      </section>
+
+      <section class="card side">
+        <h2 class="side__title">Profile information</h2>
+        <dl class="info">
+          <dt>Website</dt><dd>victoriavale.carrd.co</dd>
+          <dt>Industry</dt><dd>Industrial / Manufacturing</dd>
+          <dt>Location</dt><dd>New York, New York</dd>
+          <dt>Followers</dt><dd>12,000+</dd>
+          <dt>Connections</dt><dd>500+</dd>
+        </dl>
+      </section>
+
+    </aside>
+  </div>
+
+  <!-- DISCLOSURE -->
+  <footer class="disclosure" id="disclosure">
+    <p>Victoria Vale is a fictional AI-generated character. This profile is part of a fictional digital project.</p>
+  </footer>
+</div>
+
+<!-- ============ MODALS ============ -->
+<div class="modal" id="modal" hidden>
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+    <header class="modal__head">
+      <h2 id="modalTitle"></h2>
+      <button class="icon-btn" type="button" data-close aria-label="Close"><svg class="icon"><use href="#i-close"/></svg></button>
+    </header>
+    <div class="modal__body" id="modalBody"></div>
+    <footer class="modal__foot" id="modalFoot" hidden></footer>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="./script.js"></script>
 </body>
 </html>
