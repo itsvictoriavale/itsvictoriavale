@@ -29,7 +29,7 @@
      Set CTA_URL to the next step of the funnel. When it is set, the
      Message button (and the nav Messaging link) send visitors there.
      When it is empty, they open the demo message modal instead. */
-  var CTA_URL = '';
+  var CTA_URL = 'https://www.lego.com/en-us';
   var CTA_NEW_TAB = false;
 
   function goCTA() {
