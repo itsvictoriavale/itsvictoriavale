@@ -274,6 +274,19 @@ hr { border: 0; border-top: 1px solid var(--border-soft); margin: 8px 0; }
 .org__place { color: var(--text-3); font-size: 13px; gap: 8px; padding-left: 8px; }
 .org__place .icon { margin-right: 0; }
 
+/* Primary CTA: Message button (deliberately oversized) */
+.profile__cta { margin-top: 24px; }
+.btn--cta {
+  width: 100%; min-height: 96px; padding: 0 32px; gap: 18px;
+  border-radius: 14px; font-size: 34px; letter-spacing: .2px;
+  background: var(--navy); color: #fff; border: 0;
+  box-shadow: 0 6px 0 var(--navy-hover), 0 10px 24px rgba(20,48,77,.28);
+  transition: transform .1s, box-shadow .1s, background-color .12s;
+}
+.btn--cta .icon { width: 40px; height: 40px; stroke-width: 1.9; }
+.btn--cta:hover { background: #193a5e; }
+.btn--cta:active { transform: translateY(4px); box-shadow: 0 2px 0 var(--navy-hover), 0 4px 12px rgba(20,48,77,.25); }
+
 /* ==========================================================
    CLAMPED TEXT / SEE MORE
    ========================================================== */
@@ -556,6 +569,9 @@ hr { border: 0; border-top: 1px solid var(--border-soft); margin: 8px 0; }
   .profile__actions .dropdown { flex: none; }
   .profile__actions .dropdown .btn { padding: 0 16px; }
   .profile__actions .dropdown__menu { right: 0; left: auto; }
+  .profile__cta { margin-top: 20px; }
+  .btn--cta { min-height: 80px; font-size: 26px; padding: 0 16px; gap: 12px; border-radius: 12px; }
+  .btn--cta .icon { width: 32px; height: 32px; }
   .profile__orgs { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border-soft); }
 
   /* Featured → horizontal scroll */
